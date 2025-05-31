@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Day Madam Ji! 💋</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body class="h-screen overflow-hidden bg-gradient-to-br from-pink-200 via-red-100 to-pink-300">
+    <!-- Background Hearts -->
+    <div id="hearts-container" class="fixed inset-0 pointer-events-none z-0"></div>
+ 
+    <!-- Main Content -->
+    <div class="relative h-screen flex flex-col items-center justify-center z-10 px-4">
+        <!-- Main Heading -->
+        <h1 class="text-4xl md:text-6xl font-['Pacifico'] text-pink-600 mb-8 wiggle-text glow-text text-center">
+            Happy Birthday,<br>Madam Ji!😘💋
+        </h1>
+
+        <!-- GIF Container -->
+        <div class=" rounded-full overflow-hidden glass-effect p-1">
+            <img src="Assets/kiss-licks.gif" alt="Love GIF" class="w-full h-full object-cover rounded-full">
+        </div>
+
+        <!-- Message Display Area (Initially empty) -->
+        <div id="message-display" class="h-16 flex items-center justify-center mb-4"></div>
+
+        <!-- Kiss Counter -->
+        <div class="glass-effect rounded-xl p-6 mb-6 text-center relative">
+            <p class="text-2xl text-pink-600 font-['Bubblegum_Sans']">
+                Total Kisses Sent: <span id="kiss-counter" class="font-bold">00001</span>
+            </p>
+            <p class="text-xl text-pink-500 mt-2 font-['Bubblegum_Sans']">
+                Madam Ji, the kisses will never stop! 😘💖
+            </p>
+        </div>
+
+        <!-- Kiss Button -->
+        <button id="kiss-button" class="love-button bg-pink-400 hover:bg-pink-500 text-white font-['Bubblegum_Sans'] 
+                                      text-2xl py-4 px-8 rounded-full mb-6 glass-effect">
+            Tap for a Surprise Kiss! 💋
+        </button>
+
+        <!-- Game Entry Button -->
+        <button id="play-button" class="love-button bg-red-400 hover:bg-red-500 text-white font-['Bubblegum_Sans'] 
+                                      text-3xl py-6 px-12 rounded-full heartbeat glass-effect">
+            Let's Play a Game! 🥰
+        </button>
+    </div>
+
+<script src="Script.js"></script>
+</body>
+</html>
